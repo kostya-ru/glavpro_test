@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { type FC } from "react";
 import type * as T from "./Table.types";
 import classNames from "classnames";
 import styles from "./Table.module.css";
