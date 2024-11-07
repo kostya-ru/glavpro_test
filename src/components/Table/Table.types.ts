@@ -1,3 +1,2 @@
-export interface TableProps {
-  className?: string;
-}
+import type { HTMLAttributes } from "react";
+export type TableProps = HTMLAttributes<HTMLTableElement>;
