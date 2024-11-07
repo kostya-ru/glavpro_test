@@ -20,7 +20,6 @@ const TableCell: FC<TableCellProps> = (props) => {
     setInputValue(event.target.value);
 
   const handleOk = async () => {
-    console.log("HANDLE OK");
     if (onUserUpdate !== undefined) {
       try {
         setIsLoading(true);
@@ -29,6 +28,7 @@ const TableCell: FC<TableCellProps> = (props) => {
         throw new Error();
       } finally {
         setIsLoading(false);
+        setEditMode(false);
       }
     }
   };

@@ -11,13 +11,11 @@ const Table: FC<TableProps> = (props) => {
   useEffect(() => {
     const getData = async () => {
       const data = await getUsers();
-      console.log(data);
       setUsers(data.users);
     };
     getData();
   }, []);
-  
-  console.log("RENDER TABLE");
+
   const { className, ...rest } = props;
   const rootClasses = classNames(styles.root, className);
   return (
